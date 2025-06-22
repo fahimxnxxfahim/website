@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAHEEM'S PERSONAL WEBSITE</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: papyrus , sans-serif;
+            margin: 0;
+            padding: 10;
+            background-image: url('download.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top center;
+            background-size: cover;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 150px; 
+            overflow: hidden;
+            color: beige;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 8px #000;
+}
+
+        nav {
+            background-color: #bebebe;
+            text-align: center;
+            padding: 10px;
+            opacity: 0.7;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: ##008000;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5px;
+            background-color: #404040;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <video autoplay muted loop>
+            <source src="motor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>WELCOME TO FAHEEM'S PERSONAL WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="friends.html">FRIENDS</a>
+        <a href="hobby.html">HOBBY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+    <section style="background-color: rgba(255, 255, 255, 0.85); padding: 30px; border-radius: 10px; max-width: 800px; margin: 40px auto; text-align: center;">
+
+        <h2 style="font-family: Arial, sans-serif; font-size: 24px; margin-bottom: 20px;">MY EDUCATION</h2>
+
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+    
+    <div>
+      <img src="rendah.jpg" alt="SJK (C) PEIR CHIH" width="150" style="border-radius: 10px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" onclick="openModal('cina.jpeg')">
+      <p style="margin-top: 10px; font-family: Arial;">SJK (C) PEIR CHIH</p>
+    </div>
+
+    <div>
+      <img src="menengah.jpg" alt="SMK LONG GAFAR" width="150" style="border-radius: 10px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" onclick="openModal('koloh.jpg')">
+      <p style="margin-top: 10px; font-family: Arial;">SMK LONG GAFAR</p>
+    </div>
+
+    <div>
+      <img src="logo.png" alt="UiTM MACHANG" width="150" style="border-radius: 10px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" onclick="openModal('mache.jpg')">
+      <p style="margin-top: 10px; font-family: Arial;">UiTM MACHANG</p>
+    </div>
+
+    </section>
+
+    <div id="imageModal" style="display:none; position:fixed; z-index:999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); text-align:center; padding-top:60px;">
+    <span onclick="closeModal()" style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+    <img id="modalImage" src="" style="max-width:90%; max-height:80%;">
+    </div>
+
+<script>
+  function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imageModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+<footer>
+        <p>ALL RIGHT RESERVED BY FAHEEM, 2025</p>
+        <a href="https://www.instagram.com/xttwiliight?igsh=bHptbDZwaXZxenM1" target="_blank"
+       style="position: absolute; right: 50px; bottom: 30px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+             alt="Instagram" 
+             width="35" 
+             height="35" 
+             style="border-radius: 5px;">
+    </a>
+    </footer>
+
+</body>
+</html>

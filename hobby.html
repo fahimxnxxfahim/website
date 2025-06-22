@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAHEEM'S PERSONAL WEBSITE</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: papyrus , sans-serif;
+            margin: 0;
+            padding: 10;
+            background-image: url('download.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top center;
+            background-size: cover;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 150px; 
+            overflow: hidden;
+            color: beige;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+        }
+
+        header h1 {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        nav {
+            background-color: #bebebe;
+            text-align: center;
+            padding: 10px;
+            opacity: 0.7;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #008000;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5px;
+            background-color: #404040;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.7;
+        }
+
+        .video-container {
+            aspect-ratio: 19 / 6;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <video autoplay muted loop>
+            <source src="motor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>WELCOME TO FAHEEM'S PERSONAL WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="friends.html">FRIENDS</a>
+        <a href="hobby.html">HOBBY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+<section style="background-color: rgba(255,255,255,0.9); border-radius: 10px; padding: 20px; max-width: 650px; margin: 30px auto;">
+    <h2 style="text-align: center; font-family: Arial, sans-serif;">My HOBBY</h2>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+        <div style="flex: 1 1 300px;">
+            <div style="aspect-ratio: 4 / 5; overflow: hidden; border-radius: 10px;">
+                <img src="britty.jpg" alt="My Infographic" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+
+        <div style="flex: 1 1 300px; font-family: Arial, sans-serif;">
+            <h3>About My Hobby</h3>
+            <p>My greatest passion is that of riding my bike with my motor club since I feel free and happy as well as connected with others and the only hobby I like. Whenever we meet to have a ride, I always experience the excitement of ride and a powerful connection amongst us. It does not matter whether we want to check the new places out, take a scenic route, or participate in charity events, it will be remembered. Riding is not the only experience of belonging to the club as part of friendship, new adventures, and stress-free life. My motor club is not only a hobby to me but an important aspect of my life.</p>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; font-family: Arial, sans-serif; margin-top: 40px;">Highlights</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px;">
+
+        <!-- VIDEO 1 -->
+        <div class="video-container">
+            <video src="derak.mp4" muted loop playsinline onclick="playFullscreen(this)"></video>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>ALL RIGHT RESERVED BY FAHEEM, 2025</p>
+    <a href="https://www.instagram.com/xttwiliight?igsh=bHptbDZwaXZxenM1" target="_blank"
+       style="position: absolute; right: 50px; bottom: 30px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+             alt="Instagram" 
+             width="35" 
+             height="35" 
+             style="border-radius: 5px;">
+    </a>
+</footer>
+
+<script>
+function playFullscreen(video) {
+    video.muted = false;
+    video.play();
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+    }
+}
+</script>
+
+</body>
+</html>

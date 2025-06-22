@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAHEEM'S PERSONAL WEBSITE</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: papyrus, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-image: url('download.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top center;
+            background-size: cover;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            color: beige;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+        }
+
+        header h1 {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        nav {
+            background-color: #bebebe;
+            text-align: center;
+            padding: 10px;
+            opacity: 0.7;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #008000;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .collage img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .collage img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5px;
+            background-color: #404040;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.7;
+        }
+
+        .insta-icon {
+            position: absolute;
+            right: 50px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with video -->
+    <header>
+        <video autoplay muted loop>
+            <source src="motor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>WELCOME TO FAHEEM'S PERSONAL WEBSITE</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="friends.html">FRIENDS</a>
+        <a href="hobby.html">HOBBY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+        <h2 style="text-align: center; font-family: Arial, sans-serif;">MY FRIENDS</h2>
+
+        <div class="collage">
+            <img src="1.jpg" alt="Friend 1">
+            <img src="2.jpg" alt="Friend 2">
+            <img src="3.jpg" alt="Friend 3">
+            <img src="4.jpg" alt="Friend 4">
+            <img src="50.jpg" alt="Friend 5">
+            <img src="6.jpg" alt="Friend 6">
+            <img src="7.jpg" alt="Friend 7">
+            <img src="8.jpg" alt="Friend 8">
+            <img src="9.jpg" alt="Friend 9">
+            <img src="10.jpg" alt="Friend 10">
+            <img src="51.jpg" alt="Friend 1">
+            <img src="52.jpg" alt="Friend 2">
+        </div>
+
+        <!-- Optional: Add Audio Player -->
+        <div style="text-align: center; margin-top: 20px;">
+            <audio controls>
+                <source src="song.mp3" type="audio/mpeg">
+                <source src="song.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>ALL RIGHT RESERVED BY FAHEEM, 2025</p>
+        <a href="https://www.instagram.com/xttwiliight?igsh=bHptbDZwaXZxenM1" target="_blank" class="insta-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                 alt="Instagram" 
+                 width="35" 
+                 height="35" 
+                 style="border-radius: 5px;">
+        </a>
+    </footer>
+
+</body>
+</html>
+

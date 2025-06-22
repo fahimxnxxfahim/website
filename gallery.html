@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAHEEM'S PERSONAL WEBSITE</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: papyrus , sans-serif;
+            margin: 0;
+            padding: 10;
+            background-image: url('download.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top center;
+            background-size: cover;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 150px; 
+            overflow: hidden;
+            color: beige;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 8px #000;
+}
+
+        nav {
+            background-color: #bebebe;
+            text-align: center;
+            padding: 10px;
+            opacity: 0.7;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: ##008000;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5px;
+            background-color: #404040;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <video autoplay muted loop>
+            <source src="motor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>WELCOME TO FAHEEM'S PERSONAL WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="aboutme.html">ABOUT ME</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="friends.html">FRIENDS</a>
+        <a href="hobby.html">HOBBY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+<section style="margin: 50px auto; max-width: 100%; overflow: hidden; background-color: rgba(255,255,255,0.8); padding: 20px; border-radius: 10px;">
+  <h2 style="text-align: center; font-family: Arial, sans-serif;">"This are the moment that keep me alive,"</h2>
+
+  <!-- First Row -->
+  <div class="scroll-container">
+    <div class="scroll-track">
+      <div class="portfolio-img"><img src="20.jpg" alt="Photo 1"></div>
+      <div class="portfolio-img"><img src="21.jpg" alt="Photo 2"></div>
+      <div class="portfolio-img"><img src="22.jpg" alt="Photo 3"></div>
+      <div class="portfolio-img"><img src="23.jpg" alt="Photo 4"></div>
+      <div class="portfolio-img"><img src="24.jpg" alt="Photo 5"></div>
+      <div class="portfolio-img"><img src="25.jpg" alt="Photo 6"></div>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="scroll-container" style="margin-top: 30px;">
+    <div class="scroll-track reverse">
+      <div class="portfolio-img"><img src="26.jpg" alt="Photo 7"></div>
+      <div class="portfolio-img"><img src="27.jpg" alt="Photo 8"></div>
+      <div class="portfolio-img"><img src="28.jpg" alt="Photo 9"></div>
+      <div class="portfolio-img"><img src="29.jpg" alt="Photo 10"></div>
+      <div class="portfolio-img"><img src="30.jpg" alt="Photo 11"></div>
+      <div class="portfolio-img"><img src="31.jpg" alt="Photo 12"></div>
+    </div>
+  </div>
+
+  <style>
+    .scroll-container {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .scroll-track {
+      display: flex;
+      gap: 20px;
+      animation: slideLeft 40s linear infinite;
+    }
+
+    .scroll-track.reverse {
+      animation: slideRight 40s linear infinite;
+    }
+
+    .portfolio-img {
+      flex: 0 0 auto;
+      aspect-ratio: 5 / 4;
+      width: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .portfolio-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @keyframes slideLeft {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-160%); }
+    }
+
+    @keyframes slideRight {
+      0% { transform: translateX(-160%); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+</section>
+
+
+<footer>
+        <p>ALL RIGHT RESERVED BY FAHEEM, 2025</p>
+        <a href="https://www.instagram.com/xttwiliight?igsh=bHptbDZwaXZxenM1" target="_blank"
+       style="position: absolute; right: 50px; bottom: 30px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+             alt="Instagram" 
+             width="35" 
+             height="35" 
+             style="border-radius: 5px;">
+    </a>
+    </footer>
+
+</body>
+</html>
